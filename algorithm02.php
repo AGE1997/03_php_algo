@@ -25,18 +25,7 @@ $product = 150; // 商品金額
 function calc($yen, $product)
 {
     // この関数内に処理を記述
-    $money = [10000, 5000, 1000, 500, 100, 50, 10, 5, 1];
-    if ($yen > $product) {
-        $price = ($yen - $product);
-        for ($i = 0; $i <= 8; $i++) {
-            $prices[] = floor($price / $money[$i]);
-            $price = $price % $money[$i];
-            echo $money[$i]."円x".$prices[$i]."枚、";
-        }
-    } else {
-        $price = ($product - $yen);
-        echo $price."円足りていません。";
-    }
+
 }
 ?>
 <!DOCTYPE html>
