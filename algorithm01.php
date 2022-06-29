@@ -30,15 +30,7 @@
 function nabeatsu($i)
 {
     // この関数内に処理を記述
-    if ($i % 15 == 0) {
-        echo "アホワン"."\n";
-    } elseif ($i % 3 == 0) {
-        echo "アホ"."\n";
-    } elseif ($i % 5 == 0) {
-        echo "わん"."\n";
-    } else {
-        echo $i."\n";
-    }
+
 }
 ?>
 <!DOCTYPE html>
@@ -51,9 +43,7 @@ function nabeatsu($i)
     <section>
         <!-- ここに結果表示 -->
         <?php
-        for ($i = 1; $i <= 100; $i++) {
-            echo nabeatsu($i);
-        }
+
         ?>
     </section>
 </body>
